@@ -1,0 +1,194 @@
+.Home{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 9px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.postUser{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.proUserData span{
+    font-size: 14px;
+    opacity: .7;
+}
+.postU{
+    padding: 20px;
+    width: clamp(200px,75%,1100px);
+    position: relative;
+    background-color: #15202B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    gap: 10px;
+    border-radius: 30px;
+}
+.postU textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #15202B;
+    padding: 10px;
+    color: white;
+    max-height: 100px;
+}
+.postU img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #009EF7;
+}
+
+.fileUpload{
+    width: 100%;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    padding: 0 16px;
+}
+.fileUpload .icons{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background-color: #009EF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.fileUpload .icons input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.error{
+    position: absolute;
+    bottom: -35px;
+    left: 10%;
+    background-color: #1b87c6;
+    color: white;
+    padding: 0 10px;
+    border-left: 2px solid orange;
+    border-right: 2px solid orange;
+    font-size: 13px;
+}
+
+
+
+
+
+
+.postData{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 13px;
+
+} 
+
+
+.postCompo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+.postCompo::-webkit-scrollbar{
+    display: none;
+}
+.postCompo .divPost:hover{
+    transform: scale(.9);
+    background-color: rgb(30, 42, 54)
+}
+.postCompo .divPost{
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    width: clamp(200px,70%,900px);
+    background-color: #15202B;
+    transition: all .5s;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.postCompo .divPost .img{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.postIMage img{
+    width: clamp(200px,40%,600px);
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .postU{
+        width: 98%;
+        font-size: 13px;
+        height: 200px;
+    }
+    .postU .btn{
+        transform: scale(.8);
+    }
+    .fileUpload .icons{
+        transform: scale(.8);
+    }
+    .postCompo .divPost{
+        width: 100%;
+        font-size: 12px;
+        padding: 3px;
+    }
+    .postCompo .divPost .img{
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+    .imgPic div{
+        font-size: 10px;
+    }
+    .postCompo .divPost{
+        padding: 3px;
+    }
+}
+
+.Like{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+.Like div{
+    display: flex;
+    gap: 20px;
+}
+.Like div i{
+    background-color: rgb(58, 56, 56);
+    padding: 2px 4px;
+    border-radius: 10px;
+    border: 1px solid black;
+}

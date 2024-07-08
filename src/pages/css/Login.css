@@ -1,0 +1,86 @@
+
+.containerImg {
+    background: url("https://digiday.com/wp-content/uploads/sites/3/2023/10/twitter-X-digiday.png?resize=1030,579")  no-repeat ;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.containerImg > div{
+    backdrop-filter: blur(9px);
+}
+
+.Login {
+    position: relative;
+    width: clamp(300px, 90%, 600px);
+    background-color: white;
+    padding: 37px 10px;
+    border-radius: 12px;
+}
+.Login .userInpu input{
+    width:100%;
+    outline: none;
+    height: 40px;
+    padding: 0 10px;
+}
+.Login .userInpu h5{
+    font-size: 15px;
+}
+.Login .userInpu span{
+    position: absolute;
+    right: 22px;
+    background-color: #212E3A;
+    padding: 1px 7px;
+    border-right: 3px solid #009EF7;
+    border-left: 3px solid #009EF7;
+    top: 22px;
+    font-size: 12px;
+    color: white;
+}
+
+.btn{
+    width: 100px;
+    padding: 7px;
+    border-radius: 9px;
+    background-color: transparent;
+    border: 1px solid #009EF7;
+    background-color: #009EF7;
+    transition: all .5s;
+    color: white;
+}
+.btn:hover{
+    box-shadow: 0 0 10px 2px #009cf782,0 0 10px 2px #009cf77c;
+    transform: scale(.9); 
+    color: white;
+}
+
+.SingUp{
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    transform: scale(.8);
+    display: flex;
+    justify-content: center;
+    left: 0;
+}
+
+
+
+.imgInput{
+    height: 40px;
+}
+
+
+#singup{
+    padding: 0;
+    font-size: 11px;
+}
+#singup h5{
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 350px) {
+    .Login {
+        transform: scale(.7);
+    }
+}

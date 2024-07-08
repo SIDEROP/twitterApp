@@ -1,0 +1,100 @@
+.Profile{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #BCFCFF;
+}
+.Profile .pro1{
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Profile .top{
+    background-color: white;
+    height: 230px;
+    position: relative;
+    width: 100%;
+}
+.Profile .top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all .5s;
+}
+.Profile .top .pimg{
+    height: 200px;
+}
+.Profile .top .pimg:hover{
+    filter: blur(5px);
+}
+.Profile .imgPro{
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    outline: 2px solid white;
+    overflow: hidden;
+}
+.Profile .imgPro img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Profile .Post{
+    overflow: hidden;
+    height: 100%;
+    margin-top: 57px;
+}
+.PostNew{
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.newPost{
+    position: relative;
+    width: 100%;
+}
+
+.userNameData{
+    gap: 10px;
+}
+.userNameData span{
+    font-size: 12px;
+}
+.userNameData h4{
+    font-size: 16px;
+}
+
+.bio span{
+    width: clamp(200px,100%,50%);
+    font-size: 12px;
+}
+
+.userFollow span{
+    background-color: black;
+    color: white;
+    gap: 3px;
+    padding: 0 7px;
+    border-radius: 7px;
+    border: 1px solid white;
+    transform: scale(.9);
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.userFollow span:hover{
+    background-color:wheat;
+    color: black;
+    transform: scale(1);
+    
+}

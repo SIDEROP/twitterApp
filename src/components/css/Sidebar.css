@@ -1,0 +1,149 @@
+.Sidebar {
+  width: 330px;
+  position: relative;
+  background-color: antiquewhite;
+  transition: all 0.6s;
+}
+
+nav {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 13px 9px;
+}
+nav .btnM {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+nav.active span {
+  transition: all 0.6s;
+  opacity: 0;
+}
+nav a {
+  position: relative;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 9px;
+  transition: all 0.5s;
+  z-index: 1;
+  overflow: hidden;
+  font-weight: 400;
+  outline: 1px solid rgba(255, 255, 255, 0.249);
+}
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 17%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.413);
+  z-index: -1;
+  transition: all 0.5s;
+}
+nav a:hover::before {
+  width: 100%;
+  background-color: #00afb9;
+}
+
+.Logout {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.Logout > div {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ced4da;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.348);
+  border-radius: 30px;
+  padding: 3px 0;
+  transition: all 0.6s;
+  overflow: hidden;
+}
+.Logout img {
+  max-width: 40px;
+  max-height: 40px;
+  position: relative;
+  border-radius: 50%;
+}
+.Logout span > span {
+  color: black;
+  opacity: 0.8;
+}
+.Logout span {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: all 0.6s;
+}
+.Logout > div:hover {
+  background-color: transparent;
+  color: white;
+}
+.Logout > div:hover span {
+  color: white;
+}
+
+.Logout > div::before {
+  content: attr(data);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: rgba(0, 255, 255, 0.592);
+  z-index: 1;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  transition: all 0.5s;
+  opacity: 0;
+  cursor: pointer;
+}
+.Logout > div:hover::before {
+  height: 100%;
+  opacity: 1;
+}
+
+/* .Sidebar.active {
+  position: absolute;
+  height: 100%;
+  z-index: 99;
+} */
+
+
+@media only screen and (max-width: 500px) {
+  .Sidebar {
+    position: absolute;
+    height: 100%;
+    z-index: 99;
+    transform: translateX(-100%);
+    width: 200px;
+}
+.Sidebar.active{
+    transform: translateX(0%);
+  }
+}
